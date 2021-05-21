@@ -1,28 +1,35 @@
-# Inserts a blank line between shell prompts
-add_newline = true
+add_newline = false
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character]
-symbol = "➜"
-error_symbol = "✗"
-use_symbol_for_status = true
-style_success = "bold green"
-style_failure = "bold red"
-
-# Disable the package module, hiding it from the prompt completely
-[package]
+[line_break]
 disabled = true
 
+# Replace the "❯" symbol in the prompt with "➟"
+[character]      # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+
 [battery]
-full_symbol = "🔋"
-charging_symbol = "⚡️"
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
 discharging_symbol = "💀 "
 
-[aws]
-style = "bold blue"
-symbol = "🅰 "
-displayed_items = "region"
+[[battery.display]]
+threshold = 50
+style = "bold red"
 
 [python]
 symbol = "🐍 "
 pyenv_version_name = true
+
+[docker_context]
+format = "via [🐋 $context](blue bold)"
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold blue"
+symbol = "🅰 "
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = 4
+truncation_symbol = ""
