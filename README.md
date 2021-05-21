@@ -6,7 +6,7 @@
 
 - cd nerd-fonts
 
-- ./install.sh <Font-Name>
+- ./install.sh 'Font-Name'
   
 ## Style
 
