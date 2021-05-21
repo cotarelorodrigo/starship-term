@@ -4,9 +4,11 @@
 
 - sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-## Add the init script to your shell's config file (~/.bashrc) (~/.zshrcc)
+## Add the init script to your shell's config file
 
-- eval "$(starship init bash)"
+- **~/.bashrc**: eval "$(starship init bash)"
+
+- **~/.zshrc**: eval "$(starship init zsh)"
 
 ## Install FiraCode font
 
