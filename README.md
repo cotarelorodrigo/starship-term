@@ -4,7 +4,7 @@
 
 - sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-## Add the init script to your shell's config file [~/.bashrc][~/.zshrcc]
+## Add the init script to your shell's config file (~/.bashrc) (~/.zshrcc)
 
 - eval "$(starship init bash)"
 
