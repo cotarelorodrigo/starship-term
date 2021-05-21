@@ -2,12 +2,12 @@
 
 ## Install FiraCode font
 
-git clone https://github.com/ryanoasis/nerd-fonts
+- git clone https://github.com/ryanoasis/nerd-fonts
 
-cd nerd-fonts
+- cd nerd-fonts
 
-./install.sh <Font-Name>
+- ./install.sh <Font-Name>
   
 ## Style
 
-Change ~/.config/starship.toml
+- Change ~/.config/starship.toml
