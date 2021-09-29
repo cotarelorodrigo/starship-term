@@ -19,7 +19,10 @@ style = "bold red"
 
 [python]
 symbol = "🐍 "
-pyenv_version_name = true
+pyenv_version_name = false
+
+[java]
+detect_extensions = ["java", "class", "jar", "cljs", "cljc"]
 
 [docker_context]
 format = "via [🐋 $context](blue bold)"
@@ -27,9 +30,13 @@ format = "via [🐋 $context](blue bold)"
 [aws]
 format = 'on [$symbol($profile )(\($region\) )]($style)'
 style = "bold blue"
-symbol = "🅰 "
+symbol = "☁️ "
+disabled = true
 
 [git_branch]
-symbol = "🌱 "
-truncation_length = 4
-truncation_symbol = ""
+symbol = " "
+truncation_length = 8
+truncation_symbol = "…"
+
+[package]
+disabled=true
